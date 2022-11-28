@@ -47,11 +47,11 @@
 
                       <a href="#" onclick="prepare_update_user('.$b->id_user.'
                      )" data-toggle="modal" data-target="#Ubah"
-                     class="btn btn-warning">Ubah</a>
+                     class="btn btn-warning">Edit</a>
 
 
                      <a href="'.base_url().'index.php/User/hapus/'.$b->id_user.'"class="btn btn-danger btn-md"
-                     onclick="return confirm(\'Anda yakin Ingin Menghapus Data\')">Delete</a> </td>
+                     onclick="return confirm(\'Are you sure for delete data?\')">Delete</a> </td>
                      </tr>';
                    }
                    ?>
@@ -74,7 +74,7 @@ Username
 Level
 <select class="form-control" name="level">
               <option value="admin">Admin</option>
-              <option value="kasir">kasir</option>
+              <option value="kasir">Kasir</option>
             </select>
 Password
 <input type="text" name="password" class="form-control"></br>
