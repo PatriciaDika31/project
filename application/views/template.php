@@ -32,8 +32,8 @@
       </div>
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text"><?php echo $this->session->userdata('username') ?></span>
-              <img class="img-xs rounded-circle" src="<?php echo base_url(); ?>assets/images/faces/user1.png" alt="Profile image">
+              <span class="profile-text"><?php echo $this->session->userdata('username') ? ></span>
+              <img class="img-xs rounded-circle" src="<?php echo base_url(); ?>assets/images/faces/user1.png" alt="Profile image" >
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                   <div class="py-3 px-5 d-flex align-items-center justify-content-center border-left border-right">
@@ -59,22 +59,27 @@
                   <img src="<?php echo base_url(); ?>assets/images/faces/user1.png" alt="profile image">
                 </div>
                 <div class="text-wrapper">
-                  <p class="profile-name"><?php echo $this->session->userdata('username') ?></p>
-                  <div>
-                    <small class="designation text-muted">Develop</small>
-                    <span class="status-indicator online"></span>
-                  </div>
+                  <!-- User siapa yang lagi menggunakan. berada di sebelah bawah logo -->
+                   <p class="profile-name"><?php echo $this->session->userdata('username') ?></p>
+                  
                 </div>
               </div>
-              <button class="btn btn-primary btn-block"><a href="<?php echo base_url(); ?>index.php/User" style="text-decoration: none; color: white;">User
+              <!-- <button class="btn btn-primary btn-block"><a href="<?php echo base_url(); ?>index.php/User" style="text-decoration: none; color: white;">User
                 <i class="mdi mdi-plus"></i>
                 <a/>
-              </button>
+              </button> -->
             </div>
           </li>
           <?php
               if($this->session->userdata('level') == 'admin'){
                 ?>
+                
+                <div>
+                  <button class="btn btn-primary btn-block"><a href="<?php echo base_url(); ?>index.php/User" style="text-decoration: none; color: white;">User
+                <i class="mdi mdi-plus"></i>
+               
+              </button>
+                </div>
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>index.php/Home">
               <i class="menu-icon mdi mdi-television"></i>
@@ -125,7 +130,8 @@
           </li>
                 <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-               <i class="menu-icon mdi mdi-car"></i>
+               <i class="menu-icon mdi mdi-f19b"></i>
+               
               <span class="menu-title">Transacsion</span>
               <i class="menu-arrow"></i>
             </a>
