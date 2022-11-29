@@ -32,7 +32,7 @@
       </div>
           <li class="nav-item dropdown d-none d-xl-inline-block">
             <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-              <span class="profile-text"><?php echo $this->session->userdata('username') ? ></span>
+               <span class="profile-text"><?php echo $this->session->userdata('username') ?></span>
               <img class="img-xs rounded-circle" src="<?php echo base_url(); ?>assets/images/faces/user1.png" alt="Profile image" >
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
